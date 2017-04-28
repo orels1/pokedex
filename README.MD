@@ -1,5 +1,7 @@
 # Pokédex
 
+![header](http://i.imgur.com/t3UbES6.png)
+
 > A simple pokédex implementation with React/Redux and NodeJS/Express backend. All the buzzwords like ES7 and async/await included! :100:
 
 ## Interactive prototype
