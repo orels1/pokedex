@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "test": "NODE_ENV=test mocha ./test/*",
+    "test": "set NODE_ENV=test && mocha ./test/* --timeout 5000 --slow 0",
     "devserver": "nodemon -w server.js -w backend --config .nodemon"
   },
   "repository": {
@@ -31,16 +31,20 @@
     "babel-loader": "^7.0.0",
     "babel-preset-env": "^1.4.0",
     "babel-preset-react": "^6.24.1",
+    "chai": "^3.5.0",
+    "chai-as-promised": "^6.0.0",
     "eslint": "^3.19.0",
     "eslint-config-airbnb": "^14.1.0",
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-jsx-a11y": "^4.0.0",
     "eslint-plugin-react": "^6.10.3",
+    "mocha": "^3.3.0",
     "webpack": "^2.5.0"
   },
   "dependencies": {
     "body-parser": "^1.17.1",
     "express": "^4.15.2",
+    "lodash": "^4.17.4",
     "pokedex-promise-v2": "^3.0.3"
   }
 }
